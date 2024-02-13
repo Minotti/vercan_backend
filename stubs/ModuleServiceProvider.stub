@@ -1,0 +1,11 @@
+<?php
+
+namespace $NAMESPACE$\Providers;
+
+use App\Modules\Core\Providers\ModuleServiceProvider;
+
+class $MODULE_NAME$ServiceProvider extends ModuleServiceProvider
+{
+    protected string $moduleName = '$MODULE_NAME$';
+    protected string $routePrefix = '$ROUTE_PREFIX$';
+}

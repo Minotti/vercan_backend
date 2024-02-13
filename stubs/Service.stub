@@ -1,0 +1,14 @@
+<?php
+
+namespace $NAMESPACE$\Services;
+
+use $NAMESPACE$\Repositories\$MODULE_NAME$Repository;
+use App\Modules\Core\Services\Service;
+
+class $MODULE_NAME$Service extends Service
+{
+    public function repository(): string
+    {
+        return $MODULE_NAME$Repository::class;
+    }
+}

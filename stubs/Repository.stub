@@ -1,0 +1,13 @@
+<?php
+
+namespace $NAMESPACE$\Repositories;
+
+use App\Modules\Core\Repositories\Repository;
+
+class $MODULE_NAME$Repository extends Repository
+{
+    public function model(): string
+    {
+        return '';
+    }
+}
