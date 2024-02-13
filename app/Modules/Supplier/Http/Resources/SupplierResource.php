@@ -17,8 +17,8 @@ class SupplierResource extends BaseResource
     {
         return [
             'id' => $this->id,
-            'legal_name' => $this->legal_name,
-            'trade_name' => $this->trade_name,
+            'legal_name' => $this->legal_name ?? $this->name,
+            'trade_name' => $this->trade_name ?? $this->nickname,
             'name' => $this->name,
             'nickname' => $this->nickname,
             'type' => $this->type,
