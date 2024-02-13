@@ -141,6 +141,8 @@ return [
     */
 
     'attributes' => [
+        'password'                          => 'Senha',
+
         //Pessoa Física
         'name'                              => 'Nome',
         'rg'                                => 'RG',
