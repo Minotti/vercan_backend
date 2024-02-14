@@ -15,7 +15,7 @@ class SupplierController extends Controller
 
     public function index(): \Illuminate\Http\JsonResponse
     {
-        return $this->okResponse(SupplierResource::collection($this->service->all()));
+        return $this->okResponse(SupplierResource::collection($this->service->list()));
     }
 
     public function store(SupplierRequest $request): \Illuminate\Http\JsonResponse

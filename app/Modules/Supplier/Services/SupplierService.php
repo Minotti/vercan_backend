@@ -13,6 +13,16 @@ class SupplierService extends Service
         return SupplierRepository::class;
     }
 
+    /**
+     * Returns all suppliers with contacts and address
+     *
+     * @return \Illuminate\Database\Eloquent\Collection|array
+     */
+    public function list(): \Illuminate\Database\Eloquent\Collection|array
+    {
+        return $this->repository->model->with(['contacts', 'address.city'])->get();
+    }
+
     public function create(array $attributes): mixed
     {
         $supplier = $this->repository->create($attributes);
